@@ -90,6 +90,7 @@ footer {
     text-align: center;
     color: #999;
 }
+
 /* 打字机动画 */
 .typewriter {
   overflow: hidden; /* 隐藏超出部分 */
@@ -110,4 +111,27 @@ footer {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+/* 给图片加拍立得效果 */
+article img {
+  border: 10px solid #fff; /* 白边框 */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2); /* 阴影 */
+  transform: rotate(-2deg); /* 微微倾斜，很俏皮 */
+  transition: transform 0.3s; /* 动效过渡 */
+}
+
+/* 鼠标放上去摆正 */
+article img:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* 文章第一个段落的第一个字 */
+article p:first-of-type::first-letter {
+  font-size: 3.5rem;
+  float: left;
+  margin-right: 0.5rem;
+  line-height: 1;
+  color: var(--link-color); /* 用我们的铁锈红 */
+  font-family: "Times New Roman", serif;
 }
