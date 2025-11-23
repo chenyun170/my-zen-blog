@@ -1,0 +1,92 @@
+/* style.css - 禅意风格核心代码 */
+
+:root {
+    /* 配色：羊皮纸与旧墨水 */
+    --bg-color: #F9F5F1;       /* 米色背景 */
+    --text-color: #433E3B;     /* 深褐灰字体 */
+    --link-color: #9A5B4A;     /* 铁锈红链接 */
+    --accent-color: #D6CFC7;   /* 装饰线条颜色 */
+    --font-serif: "Georgia", "Times New Roman", "Songti SC", serif;
+    --font-mono: "Courier New", monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-serif);
+    line-height: 1.8;
+    max-width: 650px;          /* 限制宽度，模拟书页 */
+    margin: 0 auto;            /* 居中 */
+    padding: 3rem 1.5rem;
+}
+
+/* 头部导航 */
+header {
+    margin-bottom: 4rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+/* 链接样式 */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--link-color);
+    transition: all 0.2s;
+}
+
+a:hover {
+    background-color: rgba(154, 91, 74, 0.1);
+    border-bottom-style: solid;
+}
+
+/* 文章列表样式 (首页用) */
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.post-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* 文章正文样式 */
+article h2 { margin-top: 2rem; font-size: 1.3rem; }
+article p { margin-bottom: 1.5rem; }
+article blockquote {
+    border-left: 3px solid var(--link-color);
+    margin-left: 0;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* 底部 */
+footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--accent-color);
+    font-size: 0.8rem;
+    text-align: center;
+    color: #999;
+}
