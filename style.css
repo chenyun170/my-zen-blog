@@ -115,3 +115,17 @@ article p:first-of-type::first-letter {
   color: var(--link-color); /* 用我们的铁锈红 */
   font-family: "Times New Roman", serif;
 }
+
+/* style.css - 导航和按钮右侧对齐的样式 */
+
+.nav-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 1.5rem; /* 设置导航和按钮之间的间距 (1.5rem ≈ 24px) */
+}
+
+/* 优化导航链接的间距 (如果你的链接是放在 <nav> 里的) */
+nav a {
+    /* 保持链接之间的间隔 */
+    margin-left: 1rem; 
+}
