@@ -108,7 +108,7 @@ article img:hover {
 
 /* 文章第一个段落的第一个字 */
 article p:first-of-type::first-letter {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   float: left;
   margin-right: 0.5rem;
   line-height: 1;
